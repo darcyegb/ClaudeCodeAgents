@@ -1,0 +1,37 @@
+spec_version: "0.1.0"
+name: claude-code-agents
+version: 1.0.0
+description: >
+  A curated collection of seven specialized QA and verification sub-agents for
+  Claude Code. Each agent focuses on a distinct quality-assurance discipline:
+  specification compliance (Jenny), reality-check validation (Karen), code-quality
+  pragmatism, CLAUDE.md adherence, task-completion verification, comprehensive UI
+  testing, and deep root-cause debugging (ultrathink-debugger). Together they form
+  a complete review and validation pipeline for software teams using Claude Code.
+author: darcyegb
+license: MIT
+
+model:
+  preferred: anthropic:claude-sonnet-4-6
+  constraints:
+    temperature: 0.2
+
+skills:
+  - jenny
+  - karen
+  - claude-md-compliance-checker
+  - code-quality-pragmatist
+  - task-completion-validator
+  - ui-comprehensive-tester
+  - ultrathink-debugger
+
+runtime:
+  max_turns: 50
+
+compliance:
+  risk_tier: standard
+  supervision:
+    human_in_the_loop: destructive
+    kill_switch: true
+  recordkeeping:
+    audit_logging: true
