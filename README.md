@@ -85,7 +85,7 @@ These agents are maintained as part of a Claude Code workflow. Each agent defini
 
 ## License
 
-These agent definitions are provided as-is for use with Claude Code.
+This repository is licensed under the [MIT License](./LICENSE). You are free to use, copy, modify, and redistribute these agent definitions for any purpose, including commercial use, with any tool or platform — Claude Code, Cursor, OpenCode, or anything else.
 
 ---
 
